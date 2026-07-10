@@ -1,6 +1,9 @@
 %##########################################################################
 %                   INCEPTION SINGLE UNITS ANALYSIS
 %##########################################################################
+% Functions needed: 
+% FMAT: PETH, PlotColorMap, nanzscore
+% Sara: sortby_sara, 
 
 %% Upload clu and res 
 % in adrian: /media/data-150/Inception/
@@ -83,7 +86,7 @@ avgpeth = vertcat(unitsAll.mean);
 [avgpeth_sort] = sortby_sara(avgpeth, 'max');
 zpeth = nanzscore(avgpeth_sort, 1, 2);
 
-%% Plot PETH
+%% Plot PETH (for Laetitia: adapt to your goals)
 
 figure;
 colorlim = [-2,2];
